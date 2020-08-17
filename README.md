@@ -20,6 +20,10 @@ https://github.com/kleiton0x00/CRLF-one-liner/archive/master.zip
 1. Open subdomains.txt and add the URL you want to scan.
 2. Copy and paste the One-Liner Payload into your terminal
 
+## Demo
+
+![Demo CRLF one liner](https://i.imgur.com/A43KlGE.gif)
+
 ## NOTE
 Make sure to execute the payload directly as you open the terminal. Don't change directory for any reason! However if your local directory doesn't match to the payload's directory, please feel free to manually change it.  
 For example:  
