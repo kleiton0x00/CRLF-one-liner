@@ -1,5 +1,5 @@
 # CRLF-one-liner
-A simple Bash one liner with aim to automize CRLF vulnerability scanning. This is an extremely helpful and practical One liner for Bug Hunters, which helps you find CRLF missconfiguration in every possible method. Simply replace the links in subdomains.txt with the URL you want to target. This will help you scan for CRLF vulnerability without the need of an external tool. What you have to do is to copy-and-paste the commands into your terminal and finger crossed for any possible CRLF.
+A simple Bash one liner with aim to automate CRLF vulnerability scanning. This is an extremely helpful and practical One liner for Bug Hunters, which helps you find CRLF missconfiguration in every possible method. Simply replace the links in subdomains.txt with the URL you want to target. This will help you scan for CRLF vulnerability without the need of an external tool. What you have to do is to copy-and-paste the commands into your terminal and finger crossed for any possible CRLF.
 
 ## One-Liner Payload
 
@@ -9,12 +9,13 @@ A simple Bash one liner with aim to automize CRLF vulnerability scanning. This i
 
 **Linux and Mac:**  
 
-Download the github repository:  
+Download the github repository (from the /home directory):  
 `git clone https://github.com/kleiton0x00/CRLF-one-liner.git`
   
 **Windows:**  
 https://github.com/kleiton0x00/CRLF-one-liner/archive/master.zip  
-`Save it in Desktop`
+`Save it in Desktop`  
+`Extract the zip`
 
 ## Usage
 1. Open subdomains.txt and add the URL you want to scan.
@@ -27,4 +28,5 @@ https://github.com/kleiton0x00/CRLF-one-liner/archive/master.zip
 ## NOTE
 Make sure to execute the payload directly as you open the terminal. Don't change directory for any reason! However if your local directory doesn't match to the payload's directory, please feel free to manually change it.  
 For example:  
-From `input='Desktop/CRLF-one-liner/subdomains.txt'` to `input='another/path/to/subdomains.txt'`
+From `input='Desktop/CRLF-one-liner/subdomains.txt'` to `input='another/path/to/subdomains.txt'`  
+From `cat CRLF-one-liner/crlf_payloads.txt` to `cat path/to/crlf_payloads.txt`
