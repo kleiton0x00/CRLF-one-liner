@@ -3,7 +3,7 @@ A simple Bash one liner with aim to automate CRLF vulnerability scanning. This i
 
 ## One-Liner Payload
 
-`input='CRLF-one-liner/subdomains.txt';while IFS= read -r targets; do cat CRLF-one-liner/crlf_payloads.txt|xargs -I % sh -c "curl -vs --max-time 9 $targets/% 2>&1 |grep -q '< Set-Cookie: ?crlf'&& echo [+] $targets 'is vulnerable with payload: '%>>crlf_results.txt||echo '[-] Not vulnerable: '$targets";done<$input`
+`input='CRLF-one-liner/subdomains.txt';while IFS= read -r targets; do cat CRLF-one-liner/crlf_payloads.txt|xargs -I % sh -c "curl -vs --max-time 9 $targets/% 2>&1 |grep -q '< Set-Cookie: ?crlf'&& echo $targets '[+] is vulnerable with payload: '%>>crlf_results.txt||echo '[-] Not vulnerable: '$targets";done<$input`
 
 ## Installation
 
